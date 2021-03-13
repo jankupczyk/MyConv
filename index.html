@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0485ff">
+    <meta name="description" content="MyConv &copy;Jan Kupczyk">
+    <meta name="author" content="Jan Kupczyk">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:title" content="MyConv">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="MyConv is simple ONLINE CONVERTER">
+    <meta property="og:site_name" content="MyConv ONLINE">
+    <meta property="og:url" content="MyConv.com">
+    <meta property="og:image" content="public/assets/logo/og_image.png">
+
+
+    <link rel="shortcut icon" type="image/png" sizes="" href="public/favicons/favicon.ico">
+    <link rel="favicon" type="image/png" sizes="" href="public/favicons/favicon.ico">
+
+
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="public/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="public/favicons/android-chrome-512x512.png">
+
+
+    <link rel="apple-touch-icon" href="public/favicons/apple-touch-icon.png">
+
+
+    <link rel="manifest" href="public/favicons/site.webmanifest">
+
+
+    <title>MyConv - free YouTube converter | by &copy;Jan Kupczyk</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gridifier/2.0.3/gridifier.min.js"
+        integrity="sha512-ovwJZEopLdp5KfkTzmuu9+tnB6ITDk/T6gSS2WPnX++YnYuTeI/B8X2icGYCFjdxkD3iYotZfuReuT2+Hvo61A=="
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+    <div id="progress-bar-container">
+        <div id="progress-bar"></div>
+    </div>
+    <div id="Converter"></div>
+    <header>
+        <a href="index.html" class="logo" alt="MyConv logo" title="MyConv logo"><img
+                src="public/assets/logo/MyConv_logo.png" alt="MyConv logo" class="myconv-logo"></a>
+        <ul>
+            <li><a href="#Converter">Convert</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#" class="modal-btn">Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="modal-container">
+        <div class="modal">
+            <h1>MyConv | Contact us</h1>
+            <div class="modal-contact-div">
+                <div class="modal-contact">
+                    <a href="mailto:MyConv@help.gmail.com?subject=MyConv"><img src="public/assets/icons/mail.png"
+                            alt="mail me" class="mail-me-icon"></a>
+                </div>
+                <div class="modal-contact">
+                    <a href="tel:+48111222333"><img src="public/assets/icons/phone-call.png" alt="phone me"
+                            class="contact-us-icon"></a>
+                </div>
+
+            </div>
+            <form action="src/php/form_data_req.php" class="modal-form" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" name="name" class="modal-input-name" required><br>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" class="modal-input-email" required><br>
+                <label for="problem">Description:</label>
+                <textarea name="problem" id="" cols="15" rows="5" class="" class="modal-input-text"></textarea><br>
+                <button class="modal-submit-btn">Submit</button>
+                <span class="close-modal-btn">&times;</span>
+            </form>
+        </div>
+    </div>
+
+    <div class="convert" id="Converter">
+        <h1 class="page-title">MyConv: Converter</h1><br>
+        <h3 class="page-title-desc">The best free and fast YouTube converter</h3><br>
+        <div class="form-converter">
+            <input type="text" placeholder="Paste URL ...." class="input-converter" name="url">
+            <select name="fileformat" class="file-format" title="Choose file format">
+                <option value="SF" selected class="selectfo">Select format</option>
+                <option value="mp3" class="mp3HD" title="select mp3 HD format">mp3 HD</option>
+                <option value="mp3" class="mp4HD" title="select mp4 HD format">mp4 HD</option>
+                <option value="mov" class="mov" title="select mov format">mov</option>
+            </select>
+            <button class="convert-button" type="submit" name="submit">Convert</button>
+        </div><br>
+        <p class="page-title-desc-p">Enter the url of a YouTube video</p>
+    </div>
+
+    <div class="about" id="About">
+        <div class="cards">
+            <div class="card card1">
+                <div class="container">
+                    <img src="public/assets/icons/speed.png" alt="Speed">
+                </div>
+                <div class="details">
+                    <h3 title="Speed">Speed</h3>
+                    <p>The download speed on MyConv is always the highest, so we know that you will be satisfied with
+                        our service.</p>
+                </div>
+            </div>
+            <div class="card card2">
+                <div class="container">
+                    <img src="public/assets/icons/security.png" alt="Security">
+                </div>
+                <div class="details">
+                    <h3 title="Security">Security</h3>
+                    <p>With MyConv you can feel safe while downloading your favorite videos.</p>
+                </div>
+            </div>
+            <div class="card card3">
+                <div class="container">
+                    <img src="public/assets/icons/compatibility.png" alt="Compatibility">
+                </div>
+                <div class="details">
+                    <h3 title="Compatibility">Compatibility</h3>
+                    <p>MyConv guarantees the generation of the best file format, compatible with all devices.</p>
+                </div>
+            </div>
+            <div class="card card4">
+                <div class="container">
+                    <img src="public/assets/icons/money.png" alt="Free">
+                </div>
+                <div class="details">
+                    <h3 title="Free">Free</h3>
+                    <p>As we want to provide you with the best converter, MyConv is free, we don't want anything in
+                        return, anyone can use it, literally anyone !</p>
+                </div>
+            </div>
+            <div class="card card5">
+                <div class="container">
+                    <img src="public/assets/icons/contract.png" alt="No registration required">
+                </div>
+                <div class="details">
+                    <h3 title="No registration required">No registration required</h3>
+                    <p>At MyConv, you don't have to register and fill out useless forms.</p>
+                </div>
+            </div>
+            <div class="card card6">
+                <div class="container">
+                    <img src="public/assets/icons/check.png" alt="Free">
+                </div>
+                <div class="details">
+                    <h3 title="Legaly">Legal</h3>
+                    <p>MyConv is 100% legal, if you haven't read the terms of use yet, you can find them <a
+                            href="public/TermOfUse/TOUax/MyConv_ToU.pdf" class="ToU" target="_blank"
+                            rel="nofollow noopener noreferrer"><strong>here</strong></a></p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="scrollToTopBTN" id="BTN-to-top" onclick="TOTOP()" title="Go to top of page">⬆</button>
+
+    <div class="footer-wrapper">
+        &copy;&nbsp;2021&nbsp;|&nbsp;<a href="https://github.com/jankupczyk" target="_blank" rel="noopener noreferrer"
+            class="links" title="Visit my github :)">Jan&nbsp;Kupczyk</a>
+        <a class="links" href="mailto:janekkupczyk11@gmail.com" title="Mail me janekkupczyk11@gmail.com">✉</a>
+    </div>
+    <script src="src/js/index.js"></script>
+    <script src="src/js/cookie.js"></script>
+</body>
+
+</html>
