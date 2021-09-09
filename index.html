@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,6 +42,7 @@
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/lib/sweetalert2/scss/sweetalert2.css">
 </head>
 
 <body>
@@ -62,36 +62,9 @@
         <ul>
             <li><a href="#Converter">Convert</a></li>
             <li><a href="#About">About</a></li>
-            <li><a href="#" class="modal-btn">Contact</a></li>
+            <li><a href="#" class="modal-btn" onclick="openmodal()">Contact</a></li>
         </ul>
     </header>
-
-    <div class="modal-container">
-        <div class="modal">
-            <h1>MyConv | Contact us</h1>
-            <div class="modal-contact-div">
-                <div class="modal-contact">
-                    <a href="mailto:MyConv@help.gmail.com?subject=MyConv"><img src="public/assets/icons/mail.png"
-                            alt="mail me" class="mail-me-icon"></a>
-                </div>
-                <div class="modal-contact">
-                    <a href="tel:+48111222333"><img src="public/assets/icons/phone-call.png" alt="phone me"
-                            class="contact-us-icon"></a>
-                </div>
-
-            </div>
-            <form action="src/php/form_data_req.php" class="modal-form" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" name="name" class="modal-input-name" required><br>
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" class="modal-input-email" required><br>
-                <label for="problem">Description:</label>
-                <textarea name="problem" id="" cols="15" rows="5" class="" class="modal-input-text"></textarea><br>
-                <button class="modal-submit-btn">Submit</button>
-                <span class="close-modal-btn">&times;</span>
-            </form>
-        </div>
-    </div>
 
     <div class="convert" id="Converter">
         <h1 class="page-title">MyConv: Converter</h1><br>
@@ -183,6 +156,8 @@
     </div>
     <script src="src/js/index.js"></script>
     <script src="src/js/cookie.js"></script>
+    <script src="src/js/btn.js"></script>
+    <script src="src/lib/sweetalert2/js/sweetalert2.js"></script>
 </body>
 
 </html>

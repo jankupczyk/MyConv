@@ -18,12 +18,3 @@ function TOTOP() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
-var modalbtn = document.querySelector('.modal-btn');
-var modalcont = document.querySelector('.modal-container');
-var modalclose = document.querySelector('.modal-close');
-
-modalbtn.addEventListener('click', function () {
-    modalcont.classList.add('bg-active');
-
-});
