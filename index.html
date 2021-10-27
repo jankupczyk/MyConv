@@ -19,17 +19,19 @@
     <meta property="og:image" content="public/assets/logo/og_image.png">
 
 
-    <link rel="shortcut icon" type="image/png" sizes="" href="public/favicons/favicon.ico">
-    <link rel="favicon" type="image/png" sizes="" href="public/favicons/favicon.ico">
+    <link rel="shortcut icon" type="image/png" sizes="" href="🎶">
+    <link rel="favicon" type="image/png" sizes="" href="🎶">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎶</text></svg>">
 
 
-    <link rel="icon" type="image/png" sizes="16x16" href="public/favicons/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="public/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="public/favicons/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="public/favicons/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="🎶">
+    <link rel="icon" type="image/png" sizes="32x32" href="🎶">
+    <link rel="icon" type="image/png" sizes="192x192" href="🎶">
+    <link rel="icon" type="image/png" sizes="512x512" href="🎶">
 
 
-    <link rel="apple-touch-icon" href="public/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="🎶">
 
 
     <link rel="manifest" href="public/favicons/site.webmanifest">
@@ -57,8 +59,6 @@
     </div>
     <div id="Converter"></div>
     <header>
-        <a href="index.html" class="logo" alt="MyConv logo" title="MyConv logo"><img
-                src="public/assets/logo/MyConv_logo.png" alt="MyConv logo" class="myconv-logo"></a>
         <ul>
             <li><a href="#Converter">Convert</a></li>
             <li><a href="#About">About</a></li>
@@ -74,10 +74,10 @@
             <select name="fileformat" class="file-format" title="Choose file format">
                 <option value="SF" selected class="selectfo">Select format</option>
                 <option value="mp3" class="mp3HD" title="select mp3 HD format">mp3 HD</option>
-                <option value="mp3" class="mp4HD" title="select mp4 HD format">mp4 HD</option>
+                <option value="mp4" class="mp4HD" title="select mp4 HD format">mp4 HD</option>
                 <option value="mov" class="mov" title="select mov format">mov</option>
             </select>
-            <button class="convert-button" type="submit" name="submit">Convert</button>
+            <button class="convert-button" type="submit" name="submit" id="btn-convert">Convert</button>
         </div><br>
         <p class="page-title-desc-p">Enter the url of a YouTube video</p>
     </div>
@@ -152,11 +152,11 @@
     <div class="footer-wrapper">
         &copy;&nbsp;2021&nbsp;|&nbsp;<a href="https://github.com/jankupczyk" target="_blank" rel="noopener noreferrer"
             class="links" title="Visit my github :)">Jan&nbsp;Kupczyk</a>
-        <a class="links" href="mailto:janekkupczyk11@gmail.com" title="Mail me janekkupczyk11@gmail.com">✉</a>
     </div>
     <script src="src/js/index.js"></script>
     <script src="src/js/cookie.js"></script>
     <script src="src/js/btn.js"></script>
+    <script src="src/js/downloader.js"></script>
     <script src="src/lib/sweetalert2/js/sweetalert2.js"></script>
 </body>
 
